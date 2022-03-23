@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <link rel="stylesheet" href="style.css">
+    <script src="tablero.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Juego del ahorcado</h1>
+    <div class="intro">
+        <p>Bienvenido a la horca espacial</p>
+        <p>Los extraterrestres llevan a la raza humana a ser juzgados por ser seres controladores y soberbios.</p>
+        <p>Salva a la raza humana y termina con el prejuicio siguiendo las reglas del alienigena:</p>
+        <p>1- Tienes que adivinar la palabra escondida presionando las letras del teclado</p>
+        <p>2- No se acepta ningun otro caracter que no sea letras y mayusculas</p>
+        <p>3- No se pueden repetir las letras</p>
+        <p>4- Ingresa tus propias palabras, solo se permiten letras y sin espacios</p>
+    </div>
+
+    <div class="form">
+        <input type="text" placeholder="Ingresa solo letras" maxlength="20" onkeyup="validar(this)" required>
+        <button class="start">Iniciar Juego</button>
+        <button class="input">Ingresar palabra</button> 
+    </div>
+
+    <div><button class="reset">Reset</button></div>
+
+    <div>
+        <img class="espacio" src="images/espacio.jpg" width="1000" height="600">
+    </div>
+    <div class="canva">
+        <canvas width="1000" height="600"></canvas>
+    </div>
+
+    <footer>
+        <span>Made by Edgar Ivan Duran R. © 2022</span>
+    </footer>
+</body>
+</html>
